@@ -28,6 +28,10 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <link rel="icon" href="/porto.ico/" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap"
+            rel="stylesheet"
+          />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Header />

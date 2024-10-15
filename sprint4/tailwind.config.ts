@@ -15,6 +15,7 @@ const config: Config = {
         preto: '#0C0C0C',
         azulescuro: '#0069CC',
         cinza: '#E0E0E0',
+        cinzaescuro: '#222222',
       },
     },
   },
