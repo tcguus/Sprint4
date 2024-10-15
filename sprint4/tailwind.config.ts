@@ -11,6 +11,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        azul: '#0085ff',
+        preto: '#0C0C0C',
+        azulescuro: '#0069CC',
+        cinza: '#E0E0E0',
       },
     },
   },
