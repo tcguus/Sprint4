@@ -4,7 +4,7 @@ import { IoSunny } from "react-icons/io5";
 
 export default function Header() {
   return (
-    <header className="h-12  w-full flex items-center">
+    <header className="h-[4rem]  w-full flex items-center bg-white" id="sec1">
       <div className="flex items-center ml-4 gap-1">
         <img src="/logo-porto.svg" alt="Logo Porto Seguro" className="w-8" />
         <h1 className="text-4xl text-azul font-bold">Phygital Porto</h1>
