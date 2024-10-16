@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,9 +17,12 @@ const config: Config = {
         azulescuro: '#0069CC',
         cinza: '#E0E0E0',
         cinzaescuro: '#222222',
+        branco: '#ffffff',
+        escuro: '#0C0C0C', 
       },
     },
   },
   plugins: [],
 };
+
 export default config;
