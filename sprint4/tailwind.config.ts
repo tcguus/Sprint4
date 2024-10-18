@@ -1,3 +1,4 @@
+import { MdOpacity } from "react-icons/md";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        bannerImg: "url('/mecanica.jpg')", 
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
