@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header
-      className={`h-[4rem] w-full flex items-center ${
+      className={`h-[4rem] w-full flex items-center transition duration-300 ${
         isDarkMode ? 'bg-escuro' : 'bg-branco'
       }`}
       id="sec1"
