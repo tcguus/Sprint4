@@ -441,10 +441,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="sec5" className="w-full bg-white flex flex-col min-h-[calc(100vh-3rem)] scroll-mt-[3rem]">
+        <div id="sec5" className="w-full bg-white dark:bg-preto flex flex-col min-h-[calc(100vh-3rem)] scroll-mt-[3rem]">
           <div className="w-full h-[1rem] bg-azul justify-end"></div>
           <h1 className='text-azul text-5xl font-bold text-center mt-[3rem]'>Conheça os nossos integrantes!</h1>
-          <div className='flex justify-evenly mt-auto mb-auto'>
+          <div className='flex justify-evenly mt-auto mb-auto dark:text-white'>
             <div className='w-[33.3%]  h-auto flex flex-col items-center'>
               <Image
                 src="/integrante-gustavo.jpeg"
