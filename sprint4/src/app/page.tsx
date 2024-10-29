@@ -1,11 +1,11 @@
 "use client"
 
 import Image from 'next/image';
+import Link from "next/link";
 import { useState } from 'react';
 import { FaBalanceScale, FaTools } from "react-icons/fa";
 import { FaAngleDown, FaGears } from "react-icons/fa6";
 import { MdOutlinePlace } from "react-icons/md";
-import Link from "next/link";
 
 export default function Home() {
   const [accordion, setAccordion] = useState(0);
@@ -266,7 +266,7 @@ export default function Home() {
               <div className="p-4 bg-gray-100 dark:bg-cinzaescuro w-[60%] rounded shadow">
                 <h3 className="text-lg font-semibold">Reycar</h3>
                 <p className='flex'>
-                  <MdOutlinePlace  className="fa-solid fa-location-dot mr-2 mt-1" />
+                  <MdOutlinePlace className="fa-solid fa-location-dot mr-2 mt-1" />
                   Rua LUIS GAMA 185 - MOOCA - SÃO PAULO/SP
                   <br /> (11) 3209-1166
                 </p>
@@ -282,7 +282,7 @@ export default function Home() {
               <div className="p-4 bg-gray-100 dark:bg-cinzaescuro rounded w-[60%] shadow">
                 <h3 className="text-lg font-semibold">Canaã Funilaria e Pintura</h3>
                 <p className='flex'>
-                  <MdOutlinePlace  className="fa-solid fa-location-dot mr-2 mt-1" />
+                  <MdOutlinePlace className="fa-solid fa-location-dot mr-2 mt-1" />
                   Rua CONSELHEIRO RAMALHO 487 - BELA VISTA - SÃO PAULO/SP
                   <br /> (11) 3104-7760
                 </p>
@@ -298,7 +298,7 @@ export default function Home() {
               <div className="p-4 bg-gray-100 dark:bg-cinzaescuro rounded w-[60%] shadow">
                 <h3 className="text-lg font-semibold">Oficina RN Service Car</h3>
                 <p className='flex'>
-                  <MdOutlinePlace  className="fa-solid fa-location-dot mr-2 mt-1" />
+                  <MdOutlinePlace className="fa-solid fa-location-dot mr-2 mt-1" />
                   Rua HELVETIA 468 - CAMPOS ELISEOS - SÃO PAULO/SP
                   <br /> (11) 3361-8677
                 </p>
@@ -314,7 +314,7 @@ export default function Home() {
               <div className="p-4 bg-gray-100 dark:bg-cinzaescuro rounded w-[60%] shadow">
                 <h3 className="text-lg font-semibold">Stop Car Bem</h3>
                 <p className='flex'>
-                  <MdOutlinePlace  className="fa-solid fa-location-dot mr-2 mt-1" />
+                  <MdOutlinePlace className="fa-solid fa-location-dot mr-2 mt-1" />
                   Rua DOUTOR FREIRE 192 - BRÁS - SÃO PAULO/SP
                   <br /> (11) 93004-0738
                 </p>
@@ -330,7 +330,7 @@ export default function Home() {
               <div className="p-4 bg-gray-100 dark:bg-cinzaescuro rounded w-[60%] shadow">
                 <h3 className="text-lg font-semibold">Clubcar Veículos Cambuci</h3>
                 <p className='flex'>
-                  <MdOutlinePlace  className="fa-solid fa-location-dot mr-2 mt-1" />
+                  <MdOutlinePlace className="fa-solid fa-location-dot mr-2 mt-1" />
                   Rua CLIMACO BARBOSA 191 - CAMBUCI - SÃO PAULO/SP
                   <br /> (11) 3346-2582
                 </p>
@@ -346,7 +346,7 @@ export default function Home() {
               <div className="p-4 bg-gray-100 dark:bg-cinzaescuro rounded w-[60%] shadow">
                 <h3 className="text-lg font-semibold">Ribeiro Renovadora de Veículos</h3>
                 <p className='flex'>
-                  <MdOutlinePlace  className="fa-solid fa-location-dot mr-2 mt-1" />
+                  <MdOutlinePlace className="fa-solid fa-location-dot mr-2 mt-1" />
                   Rua JOSE BENTO 50 - CAMBUCI - SÃO PAULO/SP
                   <br /> (11) 3209-2954
                 </p>
@@ -362,7 +362,7 @@ export default function Home() {
               <div className="p-4 bg-gray-100 dark:bg-cinzaescuro rounded w-[60%] shadow">
                 <h3 className="text-lg font-semibold">Quality AutoTec</h3>
                 <p className='flex'>
-                  <MdOutlinePlace  className="fa-solid fa-location-dot mr-2 mt-1" />
+                  <MdOutlinePlace className="fa-solid fa-location-dot mr-2 mt-1" />
                   Rua SALVADOR LEME 291 - BOM RETIRO - SÃO PAULO/SP
                   <br /> (11) 3326-9947
                 </p>
@@ -378,7 +378,7 @@ export default function Home() {
               <div className="p-4 bg-gray-100 dark:bg-cinzaescuro rounded w-[60%] shadow">
                 <h3 className="text-lg font-semibold">Trend Auto Service</h3>
                 <p className='flex'>
-                  <MdOutlinePlace  className="fa-solid fa-location-dot mr-2 mt-1" />
+                  <MdOutlinePlace className="fa-solid fa-location-dot mr-2 mt-1" />
                   Rua CONSELHEIRO NÉBIAS 1530 - CAMPOS ELISEOS - SÃO PAULO/SP
                   <br /> (11) 99675-1794
                 </p>
@@ -394,7 +394,7 @@ export default function Home() {
               <div className="p-4 bg-gray-100 dark:bg-cinzaescuro rounded w-[60%] shadow">
                 <h3 className="text-lg font-semibold">Oficina Globo</h3>
                 <p className='flex'>
-                  <MdOutlinePlace  className="fa-solid fa-location-dot mr-2 mt-1" />
+                  <MdOutlinePlace className="fa-solid fa-location-dot mr-2 mt-1" />
                   Estrada PRT 163 S/N - ZONA RURAL - CAPITÃO LEÔNIDAS MARQUES/PR
                   <br /> (45) 3286-1419
                 </p>
@@ -410,7 +410,7 @@ export default function Home() {
               <div className="p-4 bg-gray-100 dark:bg-cinzaescuro rounded w-[60%] shadow">
                 <h3 className="text-lg font-semibold">Nicola Garage Serviços Automotivos</h3>
                 <p className='flex'>
-                  <MdOutlinePlace  className="fa-solid fa-location-dot mr-2 mt-1" />
+                  <MdOutlinePlace className="fa-solid fa-location-dot mr-2 mt-1" />
                   Rua BARRA FUNDA 308 - BARRA FUNDA - SÃO PAULO/SP
                   <br /> (11) 3666-6655
                 </p>
@@ -426,7 +426,7 @@ export default function Home() {
               <div className="p-4 bg-gray-100 dark:bg-cinzaescuro rounded w-[60%] shadow">
                 <h3 className="text-lg font-semibold">Oficina 4 Rodas Mais - Funilaria Express</h3>
                 <p className='flex'>
-                  <MdOutlinePlace  className="fa-solid fa-location-dot mr-2 mt-1" />
+                  <MdOutlinePlace className="fa-solid fa-location-dot mr-2 mt-1" />
                   Rua ORVILLE DERBY 140 - MOOCA - SÃO PAULO/SP
                   <br /> (11) 2697-3057
                 </p>
@@ -439,10 +439,69 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-
           </div>
         </div>
-        <div id="sec5" className="w-full min-h-[calc(100vh-3rem)] scroll-mt-[3rem]">sec5</div>
+        <div id="sec5" className="w-full bg-white flex flex-col min-h-[calc(100vh-3rem)] scroll-mt-[3rem]">
+          <div className="w-full h-[1rem] bg-azul justify-end"></div>
+          <h1 className='text-azul text-5xl font-bold text-center mt-[3rem]'>Conheça os nossos integrantes!</h1>
+          <div className='flex justify-evenly mt-auto mb-auto'>
+            <div className='w-[33.3%]  h-auto flex flex-col items-center'>
+              <Image
+                src="/integrante-gustavo.jpeg"
+                width="250"
+                height="250"
+                alt='Integrante Gustavo'
+                className='rounded-full border-4 border-azul'
+              />
+              <h3 className='font-bold text-2xl'>Gustavo Camargo de Andrade</h3>
+              <p className='font-semibold text-lg'>RM555562</p>
+              <p className='font-semibold text-lg'>1TDSPF</p>
+              <Link
+                href="https://github.com/tcguus"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto transition duration-300 font-semibold text-lg hover:text-azul hover:underline">https://github.com/tcguus
+              </Link>
+            </div>
+            <div className='w-[33.3%]  h-auto flex flex-col items-center'>
+              <Image
+                src="/integrante-leonardo.jpeg"
+                width="250"
+                height="250"
+                alt='Integrante Leonardo'
+                className='rounded-full border-4 border-azul'
+              />
+              <h3 className='font-bold text-2xl'>Leonardo César Nascimento</h3>
+              <p className='font-semibold text-lg'>RM558373</p>
+              <p className='font-semibold text-lg'>1TDSPF</p>
+              <Link
+                href="https://github.com/leoc7sar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto transition duration-300 font-semibold text-lg hover:text-azul hover:underline">https://github.com/leoc7sar
+              </Link>
+            </div>
+            <div className='w-[33.3%]  h-auto flex flex-col items-center'>
+              <Image
+                src="/integrante-rodrigo.jpeg"
+                width="250"
+                height="250"
+                alt='Integrante Rodrigo'
+                className='rounded-full border-4 border-azul'
+              />
+              <h3 className='font-bold text-2xl'>Rodrigo Souza Mantovanello</h3>
+              <p className='font-semibold text-lg'>RM555451</p>
+              <p className='font-semibold text-lg'>1TDSPF</p>
+              <Link
+                href="https://github.com/rsmanto"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto transition duration-300 font-semibold text-lg hover:text-azul hover:underline">https://github.com/rsmanto
+              </Link>
+            </div>
+          </div>
+          <div className="w-full h-[1rem] bg-azul justify-end mt-auto"></div>
+        </div>
       </div>
     </main>
   );
