@@ -1,5 +1,7 @@
 "use client"
 
+import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/Header';
 import Image from 'next/image';
 import Link from "next/link";
 import { useState } from 'react';
@@ -11,6 +13,8 @@ export default function Home() {
   const [accordion, setAccordion] = useState(0);
 
   return (
+    <>
+    <Header />
     <main>
       <nav className="h-[3rem] flex w-full sticky top-0 bg-white dark:bg-escuro border-b-cinza border-b-2 dark:border-cinzaescuro transition duration-300">
         <ul className="flex justify-evenly w-full items-center">
@@ -504,5 +508,7 @@ export default function Home() {
         </div>
       </div>
     </main>
+    <Footer />
+    </>
   );
 }
