@@ -15,7 +15,7 @@ export default function Login() {
   };
  
   return (
-    <div className="flex w-full h-[100vh] justify-evenly items-center transition duration-300">
+    <div className="flex w-full h-[100vh] justify-evenly items-center transition duration-300 dark:bg-cinzaescuro">
       <div className="flex gap-2">
         <Image
           src="/logo-porto.svg"
@@ -30,7 +30,7 @@ export default function Login() {
           <p className="font-bold text-azul text-[4rem] leading-none">Porto</p>
         </div>
       </div>
-      <div className="w-[35rem] h-[40rem] bg-cinza flex flex-col border-4 rounded-xl border-azul">
+      <div className="w-[35rem] h-[40rem] bg-cinza flex flex-col border-4 rounded-xl border-azul dark:bg-preto">
         <div className="flex w-full h-[3rem] justify-end items-center pr-4 gap-2 text-azul">
           <ThemeToggle onToggle={handleThemeToggle} />
           <IoMdCloseCircleOutline className="text-[1.7rem]" />
@@ -38,11 +38,11 @@ export default function Login() {
         <div className="w-full h-[35rem] flex flex-col gap-4 justify-center items-center">
           <h1 className="font-bold text-3xl">Login</h1>
           <p className="text">Por favor, faça login na sua conta!</p>
-          <div className="flex bg-white p-2 items-center border-2 border-azul rounded-xl">
+          <div className="flex bg-white p-2 items-center border-2 border-azul rounded-xl dark:bg-cinzaescuro">
             <input
               type="text"
               placeholder="E-mail"
-              className="font-bold placeholder-black focus:outline-none"
+              className="font-bold placeholder-black focus:outline-none dark:bg-cinzaescuro dark:placeholder-white"
             />
             <HiOutlineMail />
           </div>
@@ -50,7 +50,7 @@ export default function Login() {
             <input
               type="password"
               placeholder="Senha"
-              className="font-bold placeholder-black focus:outline-none"
+              className="font-bold placeholder-black focus:outline-none dark:bg-cinzaescuro dark:placeholder-white"
             />
             <TbLock />
           </div>
