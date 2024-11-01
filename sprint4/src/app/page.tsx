@@ -223,7 +223,7 @@ export default function Home() {
                   <label className='text-lg font-bold' htmlFor="logradouro">Logradouro:</label>
                   <input className='dark:bg-preto border-[1px] border-azul rounded-md p-2' type="text" id="logradouro" name="logradouro" placeholder="Digite seu logradouro..." required></input>
 
-                  <label className='text-lg font-bold' htmlFor="bairro">Data de Bairro:</label>
+                  <label className='text-lg font-bold' htmlFor="bairro">Bairro:</label>
                   <input className='dark:bg-preto border-[1px] border-azul rounded-md p-2' type="text" id="bairro" name="bairro" placeholder="Digite seu bairro..."></input>
 
                   <label className='text-lg font-bold' htmlFor="cidade">Cidade</label>
