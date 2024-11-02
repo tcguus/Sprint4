@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+:root {
   --azul: #0085ff;
-  --preto: #0C0C0C;
-  --azul-escuro: #0069CC;
-  --cinza: #E0E0E0;
+  --preto: #0c0c0c;
+  --azul-escuro: #0069cc;
+  --cinza: #e0e0e0;
   --cinzaescuro: #222;
 }
 
 body {
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 html {
@@ -23,7 +23,7 @@ html {
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease; /* Transição geral para suavizar o clique */
+  transition: all 0.3s ease;
 }
 
 .accordionBoxOpen {
@@ -46,12 +46,10 @@ html {
 }
 
 .accordionTextOpen {
-  max-height: 500px; /* valor máximo suficiente para o conteúdo expandido */
+  max-height: 500px;
   opacity: 1;
   transition: max-height 0.3s ease, opacity 0.3s ease;
 }
-
-
 
 @layer base {
   html {
@@ -69,6 +67,3 @@ html {
     @apply bg-[#0C0C0C];
   }
 }
-
-
-

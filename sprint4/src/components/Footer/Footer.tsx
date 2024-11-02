@@ -83,11 +83,21 @@ export default function Footer() {
         <div className="flex flex-col items-center pr-[1rem] gap-2">
           <p className="">Baixe o app da Porto!</p>
           <div className="flex gap-8 text-right items-center">
-            <Link href="https://apps.apple.com/br/app/porto-seguros-cartão-e/id1511026277" target="_blank" rel="noopener noreferrer" className="transition duration-300 hover:text-azul">
+            <Link
+              href="https://apps.apple.com/br/app/porto-seguros-cartão-e/id1511026277"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-300 hover:text-azul"
+            >
               <IoIosAppstore className="text-3xl" />
             </Link>
-            <Link href="https://play.google.com/store/apps/details?id=br.com.portoseguro.experienciacliente.mundoporto&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="transition duration-300 hover:text-azul">
-              <BiLogoPlayStore className="text-3xl"/>
+            <Link
+              href="https://play.google.com/store/apps/details?id=br.com.portoseguro.experienciacliente.mundoporto&pcampaignid=web_share"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-300 hover:text-azul"
+            >
+              <BiLogoPlayStore className="text-3xl" />
             </Link>
           </div>
         </div>

@@ -15,13 +15,11 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/porto.ico/" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap"
-            rel="stylesheet"
-          />
+          href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

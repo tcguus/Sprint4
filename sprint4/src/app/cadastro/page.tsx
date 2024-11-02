@@ -1,18 +1,18 @@
 "use client";
- 
+
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
 import { useState } from "react";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
- 
+
 export default function Login() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const handleThemeToggle = (darkMode: boolean) => {
     setIsDarkMode(darkMode);
   };
- 
+
   return (
     <div className="flex w-full h-[100vh] justify-evenly items-center transition duration-300 dark:bg-cinzaescuro">
       <div className="flex gap-2">
@@ -31,7 +31,9 @@ export default function Login() {
       </div>
       <div className="w-[35rem] h-[40rem] bg-cinza flex flex-col border-4 rounded-xl border-azul dark:bg-preto">
         <div className="flex w-full h-[3rem] justify-end items-center pr-4 gap-2 text-azul">
-            <Link className="mr-auto ml-3" href="/login"><FaArrowLeft className="text-[1.4rem]" /></Link>
+          <Link className="mr-auto ml-3" href="/login">
+            <FaArrowLeft className="text-[1.4rem]" />
+          </Link>
           <ThemeToggle onToggle={handleThemeToggle} />
           <Link href="/">
             <IoMdCloseCircleOutline className="text-[1.7rem] hover:text-red-500 transtion duration-300" />

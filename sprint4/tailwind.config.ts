@@ -1,4 +1,3 @@
-import { MdOpacity } from "react-icons/md";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -28,5 +27,6 @@ const config: Config = {
   },
   plugins: [],
 };
+
 
 export default config;
