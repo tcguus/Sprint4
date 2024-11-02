@@ -15,13 +15,13 @@ export default function Home() {
       <Header />
       <main>
         <Menu />
-        {/* <div className="flex flex-col w-full"> */}
-          {/* <Sec1 /> */}
+        <div className="flex flex-col w-full">
+          <Sec1 />
           {/* <Sec2 /> */}
           {/* <Sec3 /> */}
           {/* <Sec4 /> */}
           {/* <Sec5 /> */}
-        {/* </div> */}
+        </div>
       </main>
       <Footer />
     </>

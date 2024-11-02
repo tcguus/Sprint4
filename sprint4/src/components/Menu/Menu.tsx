@@ -1,6 +1,6 @@
 export default function Menu() {
   return (
-    <nav className="h-[3rem] flex w-full hidden sticky top-0 bg-white dark:bg-escuro border-b-cinza border-b-2 dark:border-cinzaescuro transition duration-300 tb:block">
+    <nav className="h-[3rem] flex w-full hidden sticky top-0 bg-white dark:bg-escuro border-b-cinza border-b-2 dark:border-cinzaescuro transition duration-300 tb:inline-flex">
       <ul className="flex justify-evenly w-full items-center">
         <li>
           <a
