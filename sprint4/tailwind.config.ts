@@ -9,8 +9,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage:{
-        bannerImg: "url('/mecanica.jpg')", 
+      spacing:{
+        'screen-h': '740px'
+      },
+      screens: {
+        ms: '320px',
+        mm: '375px',
+        ml: '425px',
+        tb: '768px',
+        lp: '1024px',
+        ll: '1440px',
+        '4k': '2560px',
+      },
+      backgroundImage: {
+        bannerImg: "url('/mecanica.jpg')",
       },
       colors: {
         background: "var(--background)",
@@ -21,12 +33,11 @@ const config: Config = {
         cinza: '#E0E0E0',
         cinzaescuro: '#222222',
         branco: '#ffffff',
-        escuro: '#0C0C0C', 
+        escuro: '#0C0C0C',
       },
     },
   },
   plugins: [],
 };
-
 
 export default config;

@@ -27,14 +27,14 @@ export default function Header() {
           width={32}
           height={32}
         />
-        <h1 className="text-4xl text-azul font-bold">Phygital Porto</h1>
+        <h1 className="text-2xl text-azul font-bold tb:text-4xl">Phygital Porto</h1>
       </div>
-      <div className="flex items-center ml-auto mr-4 gap-3">
+      <div className="flex items-center ml-auto mr-4 gap-1 ml:gap-3">
         <ThemeToggle onToggle={handleThemeToggle} />
-        <button className="flex items-center gap-1 text-azul border-2 border-blue-500 rounded-[10px] p-1">
+        <button className="flex items-center gap-1 text-azul border-0 border-blue-500 rounded-[10px] p-1 ml:border-2">
           <FaUserCircle />
-          <p className="ml-1 font-bold">Login</p>
-          <IoIosArrowDown />
+          <p className="ml-1 font-bold hidden ml:block">Login</p>
+          <IoIosArrowDown className="hidden ml:block"/>
         </button>
       </div>
     </header>
