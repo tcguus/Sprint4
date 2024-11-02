@@ -32,7 +32,7 @@ export default function Header() {
       <div className="flex items-center ml-auto mr-4 gap-1 ml:gap-3">
         <ThemeToggle onToggle={handleThemeToggle} />
         <button className="flex items-center gap-1 text-azul border-0 border-blue-500 rounded-[10px] p-1 ml:border-2">
-          <FaUserCircle />
+          <FaUserCircle className="text-[1.4rem] ml:text-base" />
           <p className="ml-1 font-bold hidden ml:block">Login</p>
           <IoIosArrowDown className="hidden ml:block"/>
         </button>

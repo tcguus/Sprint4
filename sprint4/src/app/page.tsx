@@ -12,7 +12,7 @@ import Sec5 from "@/components/Sec5/Sec5";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       {/* <main> */}
         {/* <Menu /> */}
         {/* <div className="flex flex-col w-full"> */}
@@ -23,7 +23,7 @@ export default function Home() {
           {/* <Sec5 /> */}
         {/* </div> */}
       {/* </main> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
