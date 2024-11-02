@@ -12,9 +12,9 @@ import Sec5 from "@/components/Sec5/Sec5";
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
-      {/* <main> */}
-        {/* <Menu /> */}
+      <Header />
+      <main>
+        <Menu />
         {/* <div className="flex flex-col w-full"> */}
           {/* <Sec1 /> */}
           {/* <Sec2 /> */}
@@ -22,7 +22,7 @@ export default function Home() {
           {/* <Sec4 /> */}
           {/* <Sec5 /> */}
         {/* </div> */}
-      {/* </main> */}
+      </main>
       <Footer />
     </>
   );

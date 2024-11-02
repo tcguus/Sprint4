@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full h-[25rem] bg-cinzaescuro text-white text-lg flex flex-col justify-between tb:flex-row tb:h-[6rem]">
-      <div className="w-full h-[33%] bg-red-500 flex flex-col justify-center items-center gap-2 tb:w-[1/3] tb:h-auto tb:pl-[1rem]">
+      <div className="w-full h-[33%] flex flex-col justify-center items-center gap-2 tb:w-[1/3] tb:h-auto tb:pl-[1rem]">
         <Link
           href="https://api.whatsapp.com/send?1=pt_BR&phone=551130039303&text=Oi,%20Porto%20Seguro%20!"
           target="_blank"
@@ -79,10 +79,10 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <div className="w-full h-[33%] flex flex-col justify-center items-center tb:w-[1/3] tb:h-auto">
+      <div className="w-full h-[33%] flex flex-col justify-center items-center tb:w-[1/3] tb:h-auto tb:items-end">
         <div className="flex flex-col items-center gap-2 tb:pr-[1rem]">
           <p className="">Baixe o app da Porto!</p>
-          <div className="flex gap-8 text-right items-center">
+          <div className="flex gap-8 text-right items-center tb:text-right">
             <Link
               href="https://apps.apple.com/br/app/porto-seguros-cartão-e/id1511026277"
               target="_blank"
