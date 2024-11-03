@@ -7,7 +7,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
-export default function Login() {
+export default function Cadastro() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const handleThemeToggle = (darkMode: boolean) => {
     setIsDarkMode(darkMode);
@@ -15,7 +15,7 @@ export default function Login() {
 
   return (
     <div className="flex w-full h-[100vh] justify-evenly items-center transition duration-300 dark:bg-cinzaescuro">
-      <div className="flex gap-2">
+      <div className="gap-2 hidden lp:flex">
         <Image
           src="/logo-porto.svg"
           width="150"
@@ -29,7 +29,7 @@ export default function Login() {
           <p className="font-bold text-azul text-[4rem] leading-none">Porto</p>
         </div>
       </div>
-      <div className="w-[35rem] h-[40rem] bg-cinza flex flex-col border-4 rounded-xl border-azul dark:bg-preto">
+      <div className="w-[18rem] h-[35rem] bg-cinza flex flex-col border-4 rounded-xl border-azul dark:bg-preto mm:w-[20rem] ml:w-[25rem] tb:w-[35rem]">
         <div className="flex w-full h-[3rem] justify-end items-center pr-4 gap-2 text-azul">
           <Link className="mr-auto ml-3" href="/login">
             <FaArrowLeft className="text-[1.4rem]" />
@@ -96,7 +96,7 @@ export default function Login() {
             </button>
           </div>
         </form>
-        <div className="w-full h-[2rem] flex justify-center items-center ">
+        <div className="w-full h-[2rem] text-[12px] flex justify-center items-center text-center mb-[0.5rem] tb:mb-0 tb:text-base">
           <p>
             © Copyright 2024 by Phygital Porto. Todos os direitos reservados.
           </p>
