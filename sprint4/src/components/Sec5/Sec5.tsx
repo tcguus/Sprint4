@@ -7,12 +7,12 @@ export default function Sec5() {
       id="sec5"
       className="w-full bg-white dark:bg-preto flex flex-col min-h-[calc(100vh-3rem)] scroll-mt-[3rem]"
     >
-      <div className="w-full h-[1rem] bg-azul justify-end"></div>
-      <h1 className="text-azul text-5xl font-bold text-center mt-[3rem]">
+      <div className="w-full h-[0.5rem] bg-azul justify-end tb:h-[1rem]"></div>
+      <h1 className="text-azul text-2xl font-bold text-center mt-[1.5rem] mb-[1.5rem] tb:text-5xl lp:mt-[3rem] lp:mb-0">
         Conheça os nossos integrantes!
       </h1>
-      <div className="flex justify-evenly mt-auto mb-auto dark:text-white">
-        <div className="w-[33.3%]  h-auto flex flex-col items-center">
+      <div className="flex flex-col items-center gap-6 justify-evenly mt-auto mb-auto dark:text-white lp:flex-row lp:items-stretch">
+        <div className="w-[33.3%]  h-auto flex flex-col items-center text-center">
           <Image
             src="/integrante-gustavo.jpeg"
             width="250"
@@ -32,7 +32,7 @@ export default function Sec5() {
             https://github.com/tcguus
           </Link>
         </div>
-        <div className="w-[33.3%]  h-auto flex flex-col items-center">
+        <div className="w-[33.3%]  h-auto flex flex-col items-center text-center">
           <Image
             src="/integrante-leonardo.jpeg"
             width="250"
@@ -52,7 +52,7 @@ export default function Sec5() {
             https://github.com/leoc7sar
           </Link>
         </div>
-        <div className="w-[33.3%]  h-auto flex flex-col items-center">
+        <div className="w-[33.3%]  h-auto flex flex-col items-center text-center mb-[1rem] lp:mb-0">
           <Image
             src="/integrante-rodrigo.jpeg"
             width="250"
@@ -73,7 +73,7 @@ export default function Sec5() {
           </Link>
         </div>
       </div>
-      <div className="w-full h-[1rem] bg-azul justify-end mt-auto"></div>
+      <div className="w-full h-[0.5rem] bg-azul justify-end mt-auto tb:h-[1rem]"></div>
     </div>
   );
 }
