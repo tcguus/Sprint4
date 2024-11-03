@@ -18,8 +18,8 @@ export default function Home() {
         <div className="flex flex-col w-full">
           {/* <Sec1 /> */}
           {/* <Sec2 /> */}
-          <Sec3 />
-          {/* <Sec4 /> */}
+          {/* <Sec3 /> */}
+          <Sec4 />
           {/* <Sec5 /> */}
         </div>
       </main>

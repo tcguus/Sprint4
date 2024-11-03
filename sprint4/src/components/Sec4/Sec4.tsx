@@ -6,10 +6,10 @@ export default function Sec4() {
   return (
     <div
       id="sec4"
-      className="w-full bg-white dark:bg-preto flex min-h-[calc(100vh-3rem)] scroll-mt-[3rem]"
+      className="w-full bg-white dark:bg-preto flex flex-col items-center min-h-[calc(100vh-3rem)] scroll-mt-[3rem] tb:flex-row tb:justify-evenly bg-red-500"
     >
-      <div className="w-[50%] flex flex-col justify-center items-center min-h-[calc(100vh-3rem)]">
-        <h1 className="font-bold text-3xl text-center">
+      <div className="w-[40%] mt-[1rem] mb-[1rem] flex flex-col justify-center items-center tb:min-h-[calc(100vh-3rem)] tb:mt-0">
+        <h1 className="font-bold text-xl text-center tb:text-3xl">
           Encontre a Oficina da Porto mais próxima de você!
         </h1>
         <Image
@@ -27,8 +27,8 @@ export default function Sec4() {
           className="mt-[1.5rem] dark:block hidden"
         />
       </div>
-      <div className="w-[50%] flex justify-center items-center">
-        <div className="space-y-6 overflow-auto overflow-y-scroll items-center w-[60%] h-[40rem] flex-grow flex flex-col m-auto">
+      <div className="w-[90%] flex justify-center items-center tb:w-[50%]">
+        <div className="custom-scrollbar space-y-6 overflow-auto overflow-y-scroll mb-[1rem] items-center w-[60%] h-[40rem] flex-grow flex flex-col m-auto">
           <div className="p-4 bg-gray-100 dark:bg-cinzaescuro w-[60%] rounded shadow">
             <h3 className="text-lg font-semibold">Reycar</h3>
             <p className="flex">
