@@ -15,8 +15,8 @@ export default function Login() {
   };
 
   return (
-    <div className="flex w-full h-[100vh] justify-evenly items-center transition duration-300 dark:bg-cinzaescuro">
-      <div className="flex gap-2">
+    <div className="flex w-full h-[100vh] justify-evenly items-center transition duration-300 dark:bg-cinzaescuro ">
+      <div className="gap-2 hidden lp:flex ">
         <Image
           src="/logo-porto.svg"
           width="150"
@@ -30,14 +30,14 @@ export default function Login() {
           <p className="font-bold text-azul text-[4rem] leading-none">Porto</p>
         </div>
       </div>
-      <div className="w-[35rem] h-[40rem] bg-cinza flex flex-col border-4 rounded-xl border-azul dark:bg-preto">
+      <div className="w-[18rem] h-[35rem] bg-cinza flex flex-col border-4 rounded-xl border-azul dark:bg-preto mm:w-[20rem] ml:w-[25rem] tb:w-[35rem]">
         <div className="flex w-full h-[3rem] justify-end items-center pr-4 gap-2 text-azul">
           <ThemeToggle onToggle={handleThemeToggle} />
           <Link href="/">
             <IoMdCloseCircleOutline className="text-[1.7rem] hover:text-red-500 transtion duration-300" />
           </Link>
         </div>
-        <form className="w-full h-[35rem] flex flex-col gap-4 justify-center items-center">
+        <form className="w-full h-[30rem] flex flex-col gap-4 justify-center items-center">
           <h1 className="font-bold text-3xl">Login</h1>
           <p className="text">Por favor, faça login na sua conta!</p>
           <div className="flex bg-white p-2 items-center border-2 border-azul rounded-xl dark:bg-cinzaescuro">
@@ -72,7 +72,7 @@ export default function Login() {
             </Link>
           </div>
         </form>
-        <div className="w-full h-[2rem] flex justify-center items-center ">
+        <div className="w-full h-[2rem] flex justify-center items-center text-center mb-[1rem] tb:mb-0">
           <p>
             © Copyright 2024 by Phygital Porto. Todos os direitos reservados.
           </p>

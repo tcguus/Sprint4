@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       spacing:{
-        'screen-h': '740px'
+        'screen-h': '710px'
       },
       screens: {
         ms: '320px',
