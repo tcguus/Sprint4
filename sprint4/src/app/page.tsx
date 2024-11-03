@@ -17,8 +17,8 @@ export default function Home() {
         <Menu />
         <div className="flex flex-col w-full">
           {/* <Sec1 /> */}
-          <Sec2 />
-          {/* <Sec3 /> */}
+          {/* <Sec2 /> */}
+          <Sec3 />
           {/* <Sec4 /> */}
           {/* <Sec5 /> */}
         </div>

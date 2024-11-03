@@ -45,14 +45,14 @@ export default function Sec3() {
       id="sec3"
       className="w-full bg-cinza dark:bg-cinzaescuro min-h-[calc(100vh-3rem)] scroll-mt-[3rem] flex justify-center items-center"
     >
-      <div className="w-[95%] bg-white dark:bg-preto rounded-2xl">
-        <h1 className="text-3xl text-center font-bold mt-[2rem] mb-[2rem]">
+      <div className="w-[95%] bg-white mt-[1rem] mb-[1rem] dark:bg-preto rounded-2xl">
+        <h1 className="text-xl text-center font-bold mt-[2rem] mb-[2rem] tb:text-3xl">
           Relate seu problema, <br />
           preencha o formulário abaixo:
         </h1>
         <form action="" className="flex flex-col" onSubmit={handleSubmit}>
-          <div className="flex justify-evenly">
-            <div className="border-preto dark:border-white border-[2px] rounded-xl p-4 flex flex-col w-[28%]">
+          <div className="flex flex-col gap-4 justify-evenly items-center tb:flex-row tb:items-stretch tb:gap-0">
+            <div className="border-preto dark:border-white border-[2px] rounded-xl p-4 flex flex-col w-[70%] tb:w-[28%]">
               <h3 className="text-xl font-bold ">Seus dados:</h3>
               <label className="text-lg font-bold" htmlFor="nome">
                 Nome:
@@ -131,7 +131,7 @@ export default function Sec3() {
                 }
               />
             </div>
-            <div className="border-preto dark:border-white border-[2px] rounded-xl p-4 flex flex-col w-[28%]">
+            <div className="border-preto dark:border-white border-[2px] rounded-xl p-4 flex flex-col w-[70%] tb:w-[28%]">
               <h3 className="text-xl font-bold">Endereço:</h3>
               <label className="text-lg font-bold" htmlFor="cep">
                 CEP:
@@ -208,7 +208,7 @@ export default function Sec3() {
                 }
               />
             </div>
-            <div className="border-preto dark:border-white border-[2px] rounded-xl p-4 flex flex-col w-[28%]">
+            <div className="border-preto dark:border-white border-[2px] rounded-xl p-4 flex flex-col w-[70%] tb:w-[28%]">
               <h3 className="text-xl font-bold">Veículo:</h3>
               <label className="text-lg font-bold" htmlFor="placa">
                 Placa:
