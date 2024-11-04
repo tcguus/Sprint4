@@ -6,7 +6,7 @@ export default function Sec4() {
   return (
     <div
       id="sec4"
-      className="w-full bg-white dark:bg-preto flex flex-col items-center min-h-[calc(100vh-3rem)] scroll-mt-[3rem] tb:flex-row tb:justify-evenly bg-red-500"
+      className="w-full bg-white dark:bg-preto flex flex-col items-center min-h-[calc(100vh-3rem)] scroll-mt-[3rem] tb:flex-row tb:justify-evenly"
     >
       <div className="w-[40%] mt-[1rem] mb-[1rem] flex flex-col justify-center items-center tb:min-h-[calc(100vh-3rem)] tb:mt-0">
         <h1 className="font-bold text-xl text-center tb:text-3xl">

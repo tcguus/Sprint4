@@ -39,18 +39,15 @@ export default function Header() {
   };
 
   const handleLogout = () => {
-    // Limpa os dados do usuário no estado, mas mantém os dados no localStorage
     setUserName(null);
     setUserEmail(null);
     setIsDropdownOpen(false);
-    router.push("/"); // Redireciona para a página principal após logout
   };
 
   return (
     <header
-      className={`h-[4rem] w-full flex items-center transition duration-300 ${
-        isDarkMode ? "bg-escuro" : "bg-branco"
-      }`}
+      className={`h-[4rem] w-full flex items-center transition duration-300 ${isDarkMode ? "bg-escuro" : "bg-branco"
+        }`}
       id="sec1"
     >
       <div className="flex items-center ml-4 gap-1">
@@ -74,8 +71,6 @@ export default function Header() {
           </p>
           {userName && <IoIosArrowDown className="hidden ml:block" />}
         </button>
-
-        {/* Aba suspensa com animação */}
         <AnimatePresence>
           {isDropdownOpen && userEmail && (
             <motion.div
