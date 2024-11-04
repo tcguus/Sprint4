@@ -2,7 +2,7 @@ import oracledb from "oracledb";
 
 oracledb.initOracleClient({
   libDir:
-    "C:/Users/Gustavo/Downloads/instantclient-basic-windows.x64-23.5.0.24.07/instantclient_23_5",
+    "C:/Users/labsfiap/Downloads/instantclient-basic-windows.x64-23.5.0.24.07/instantclient_23_5",
 });
 
 export const getConnection = async () => {
