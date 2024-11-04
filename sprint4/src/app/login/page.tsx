@@ -1,16 +1,16 @@
 "use client";
 
-import { IoMdCloseCircleOutline } from "react-icons/io";
-import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
-import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { HiOutlineMail } from "react-icons/hi";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 import { TbLock } from "react-icons/tb";
 
 export default function Login() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [, setIsDarkMode] = useState(false);
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const router = useRouter();

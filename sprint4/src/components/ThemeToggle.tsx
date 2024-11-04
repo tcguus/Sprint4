@@ -7,6 +7,11 @@ interface ThemeToggleProps {
   onToggle: (isDarkMode: boolean) => void;
 }
 
+const isDarkMode: boolean = true;
+if (isDarkMode) {
+  console.log('Dark mode is enabled');
+}
+
 const ThemeToggle: React.FC<ThemeToggleProps> = ({ onToggle }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 

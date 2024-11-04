@@ -1,15 +1,15 @@
 "use client";
 
-import { IoMdCloseCircleOutline } from "react-icons/io";
-import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
-import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { FaArrowLeft } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { FaArrowLeft } from "react-icons/fa";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 
 export default function Cadastro() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [, setIsDarkMode] = useState(false);
   const [nome, setNome] = useState("");
   const [cpf, setCpf] = useState("");
   const [email, setEmail] = useState("");
@@ -44,7 +44,7 @@ export default function Cadastro() {
         </div>
       </div>
       <div className="w-[18rem] h-[35rem] bg-cinza flex flex-col border-4 rounded-xl border-azul dark:bg-preto mm:w-[20rem] ml:w-[25rem] tb:w-[35rem]">
-      <div className="flex w-full h-[3rem] justify-end items-center pr-4 gap-2 text-azul">
+        <div className="flex w-full h-[3rem] justify-end items-center pr-4 gap-2 text-azul">
           <Link className="mr-auto ml-3" href="/login">
             <FaArrowLeft className="text-[1.4rem]" />
           </Link>
