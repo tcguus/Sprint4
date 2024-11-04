@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 
 export default function Sec3() {
   const [formData, setFormData] = useState({
@@ -18,28 +18,34 @@ export default function Sec3() {
     km: "",
     sintomas: "",
   });
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    console.log(e);
-    try {
-      const response = await fetch("/api/cliente", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      const result = await response.json();
-      if (response.ok) {
-        alert(result.message);
-      } else {
-        alert(result.error || "Erro ao enviar o formulário");
-      }
-    } catch (error) {
-      console.error(error);
-    }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    localStorage.setItem("dadosFormulario", JSON.stringify(formData));
+    console.log("Formulário enviado com sucesso!");
+    setFormData({
+      nome: "",
+      cpf: "",
+      nascimento: "",
+      email: "",
+      tel: "",
+      cep: "",
+      logradouro: "",
+      bairro: "",
+      cidade: "",
+      estado: "",
+      placa: "",
+      modelo: "",
+      ano: "",
+      km: "",
+      sintomas: "",
+    });
+  };
   return (
     <div
       id="sec3"
@@ -50,10 +56,10 @@ export default function Sec3() {
           Relate seu problema, <br />
           preencha o formulário abaixo:
         </h1>
-        <form action="" className="flex flex-col" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="flex flex-col">
           <div className="flex flex-col gap-4 justify-evenly items-center tb:flex-row tb:items-stretch tb:gap-0">
             <div className="border-preto dark:border-white border-[2px] rounded-xl p-4 flex flex-col w-[70%] tb:w-[28%]">
-              <h3 className="text-xl font-bold ">Seus dados:</h3>
+              <h3 className="text-xl font-bold">Seus dados:</h3>
               <label className="text-lg font-bold" htmlFor="nome">
                 Nome:
               </label>
@@ -63,11 +69,9 @@ export default function Sec3() {
                 id="nome"
                 name="nome"
                 placeholder="Digite seu nome..."
-                required
                 value={formData.nome}
-                onChange={(e) =>
-                  setFormData({ ...formData, nome: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
               <label className="text-lg font-bold" htmlFor="cpf">
                 CPF:
@@ -78,11 +82,9 @@ export default function Sec3() {
                 id="cpf"
                 name="cpf"
                 placeholder="Digite seu CPF..."
-                required
                 value={formData.cpf}
-                onChange={(e) =>
-                  setFormData({ ...formData, cpf: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
               <label className="text-lg font-bold" htmlFor="nascimento">
                 Data de Nascimento:
@@ -92,13 +94,11 @@ export default function Sec3() {
                 type="date"
                 id="nascimento"
                 name="nascimento"
+                value={formData.nascimento}
+                onChange={handleChange}
                 required
                 min="1900-01-01"
-                max="2006-31-12"
-                value={formData.nascimento}
-                onChange={(e) =>
-                  setFormData({ ...formData, nascimento: e.target.value })
-                }
+                max="2006-12-31"
               />
               <label className="text-lg font-bold" htmlFor="email">
                 E-mail:
@@ -109,11 +109,9 @@ export default function Sec3() {
                 id="email"
                 name="email"
                 placeholder="Digite seu e-mail..."
-                required
                 value={formData.email}
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
               <label className="text-lg font-bold" htmlFor="tel">
                 Telefone:
@@ -124,11 +122,9 @@ export default function Sec3() {
                 id="tel"
                 name="tel"
                 placeholder="Digite seu telefone..."
-                required
                 value={formData.tel}
-                onChange={(e) =>
-                  setFormData({ ...formData, tel: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="border-preto dark:border-white border-[2px] rounded-xl p-4 flex flex-col w-[70%] tb:w-[28%]">
@@ -142,11 +138,9 @@ export default function Sec3() {
                 id="cep"
                 name="cep"
                 placeholder="Digite seu CEP..."
-                required
                 value={formData.cep}
-                onChange={(e) =>
-                  setFormData({ ...formData, cep: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
               <label className="text-lg font-bold" htmlFor="logradouro">
                 Logradouro:
@@ -157,11 +151,9 @@ export default function Sec3() {
                 id="logradouro"
                 name="logradouro"
                 placeholder="Digite seu logradouro..."
-                required
                 value={formData.logradouro}
-                onChange={(e) =>
-                  setFormData({ ...formData, logradouro: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
               <label className="text-lg font-bold" htmlFor="bairro">
                 Bairro:
@@ -173,12 +165,10 @@ export default function Sec3() {
                 name="bairro"
                 placeholder="Digite seu bairro..."
                 value={formData.bairro}
-                onChange={(e) =>
-                  setFormData({ ...formData, bairro: e.target.value })
-                }
+                onChange={handleChange}
               />
               <label className="text-lg font-bold" htmlFor="cidade">
-                Cidade
+                Cidade:
               </label>
               <input
                 className="dark:bg-preto border-[1px] border-azul rounded-md p-2"
@@ -186,11 +176,9 @@ export default function Sec3() {
                 id="cidade"
                 name="cidade"
                 placeholder="Digite sua cidade..."
-                required
                 value={formData.cidade}
-                onChange={(e) =>
-                  setFormData({ ...formData, cidade: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
               <label className="text-lg font-bold" htmlFor="estado">
                 Estado:
@@ -201,11 +189,9 @@ export default function Sec3() {
                 id="estado"
                 name="estado"
                 placeholder="Digite seu estado..."
-                required
                 value={formData.estado}
-                onChange={(e) =>
-                  setFormData({ ...formData, estado: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="border-preto dark:border-white border-[2px] rounded-xl p-4 flex flex-col w-[70%] tb:w-[28%]">
@@ -219,11 +205,9 @@ export default function Sec3() {
                 id="placa"
                 name="placa"
                 placeholder="Digite a placa..."
-                required
                 value={formData.placa}
-                onChange={(e) =>
-                  setFormData({ ...formData, placa: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
               <label className="text-lg font-bold" htmlFor="modelo">
                 Modelo:
@@ -234,28 +218,24 @@ export default function Sec3() {
                 id="modelo"
                 name="modelo"
                 placeholder="Digite o modelo..."
-                required
                 value={formData.modelo}
-                onChange={(e) =>
-                  setFormData({ ...formData, modelo: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
               <label className="text-lg font-bold" htmlFor="ano">
                 Ano:
               </label>
               <input
-                className=" dark:bg-preto border-[1px] border-azul rounded-md p-2"
+                className="dark:bg-preto border-[1px] border-azul rounded-md p-2"
                 type="number"
                 id="ano"
                 name="ano"
+                placeholder="Digite o ano..."
+                value={formData.ano}
+                onChange={handleChange}
                 min="1900"
                 max="2100"
-                placeholder="Digite o ano..."
                 required
-                value={formData.ano}
-                onChange={(e) =>
-                  setFormData({ ...formData, ano: e.target.value })
-                }
               />
               <label className="text-lg font-bold" htmlFor="km">
                 Kilometragem:
@@ -266,11 +246,9 @@ export default function Sec3() {
                 id="km"
                 name="km"
                 placeholder="Digite a kilometragem..."
-                required
                 value={formData.km}
-                onChange={(e) =>
-                  setFormData({ ...formData, km: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
               <label className="text-lg font-bold" htmlFor="sintomas">
                 Sintomas apresentados:
@@ -281,11 +259,9 @@ export default function Sec3() {
                 id="sintomas"
                 name="sintomas"
                 placeholder="Digite os sintomas apresentados..."
-                required
                 value={formData.sintomas}
-                onChange={(e) =>
-                  setFormData({ ...formData, sintomas: e.target.value })
-                }
+                onChange={handleChange}
+                required
               />
             </div>
           </div>
