@@ -30,6 +30,7 @@ Phygital Porto é uma plataforma inteligente de agendamento de consertos mecâni
 
 ## Link do projeto deployado na Vercel:
    sprint4-beta.vercel.app
+   https://vercel.com/gustavos-projects-c41f931a/sprint4/C4tfv1S8dKYnaUKZmFo7Z28Stnic (Caso o primeiro não funcione)
 
 ## Link do vídeo no YouTube:
    https://youtu.be/876l-mmrP2I?si=u5-K2RJgeMqme_wK
@@ -38,11 +39,11 @@ Phygital Porto é uma plataforma inteligente de agendamento de consertos mecâni
 - **Gustavo Camargo de Andrade**
 - RM555562
 - 1TDSPF
-
+-------------------------------------------
 - **Rodrigo Souza Mantovanello**
 - RM555451
 - 1TDSPF
-
+-------------------------------------------
 - **Leonardo Cesar Rodrigues Nascimento**
 - RM558373
 - 1TDSPF
